@@ -1,0 +1,27 @@
+body {
+            background: #f3f2f3;
+            color: #000000;
+            font-family: Times New Roman;
+            font-size: 20px;
+}
+ 
+#head-menu {
+            
+            height: 100px;
+            width: 900px;
+}
+
+#main-menu {
+            
+            float: left;
+            width: 200px;
+            height: 400px;
+}
+ 
+#menu-field {
+            
+            float: right;
+ 
+            width: 700px;
+            height: 400px;
+}

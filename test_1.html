@@ -1,0 +1,43 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="style.css" /> 
+ <title>Реєстрація нового користувача</title>
+</head>
+<body>
+	<div id="head-menu" align=center>
+		Реєстрація
+	</div>
+	
+	<div id="main-menu" align=left>
+		<a href="test_1.1.html">Користувачі</a>
+	</div>
+
+	<div id="menu-field" align=justify>
+		<p><b>Повне ім'я: </b><br>
+		<input required type="text" size="20" id="full_name">
+		<p><b>E-mail: </b></br> 
+		<input required type="email" id="email">
+		<script>
+		var email = document.getElementById('email value');
+		var email_regexp = /[0-9a-zа-я_A-ZА-Я]+@[0-9a-zа-я_A-ZА-Я^.]+\.[a-zа-яА-ЯA-Z]{2,4}/i;
+		if (!email_regexp.test(email.value)) {
+        alert('Проверьте email');
+        return false;
+		}
+		</script>
+	
+		<p><b>Пароль: </b><br>
+		<input required type="password" id="password">
+		<p><b>Вибір статусу: </b><br>
+		<select id="role">
+		<option value="Admin">Адміністратор</option>
+		<option value="User">Користувач</option>
+		</select>
+		<p><b><input type="Submit" id="button" value="Створити"></b>
+		<input type="reset" value="Очистити"></p>
+	</div>
+	<script src="test_1.js"></script>
+	
+
+</body>
+</html>
