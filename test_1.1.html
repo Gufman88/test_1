@@ -13,12 +13,18 @@ var c =  localStorage.getItem('password value');
 var d =  localStorage.getItem('pole value');
 </script>
 
-<div>
-<p>Имя пользователя:</p><script>document.write(a)</script>
-<p>E-mail пользователя:</p><script>document.write(b)</script>
-<p>Password пользователя:</p><script>document.write(c)</script>
-<p>Статус пользователя:</p><script>document.write(d)</script>
-</div>
-
+<table border=3px>
+	<tr>
+		<th>Ім'я користувача</th>
+		<th>Е-mail користувача</th>
+		<th>Пароль користувача</th>
+		<th>Статус користувача</th>
+	</tr>
+	<tr><td><script>document.write(a)</script></td>
+	<td><script>document.write(b)</script></td>
+	<td><script>document.write(c)</script></td>
+	<td><script>document.write(d)</script></td>
+	</tr>
+</table>
 </body>
 </html>
